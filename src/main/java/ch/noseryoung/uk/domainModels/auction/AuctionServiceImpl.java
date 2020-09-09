@@ -60,7 +60,6 @@ public class AuctionServiceImpl implements AuctionService {
             if (auction.getPrice() < maxprice && auction.getPrice() > minprice) {
                 auctionsInRange.add(auction);
             }
-            return auctionsInRange;
         }
         return Collections.emptyList();
     }
