@@ -15,6 +15,7 @@ repositories {
 	mavenCentral()
 }
 
+
 dependencies {
 // Spring Boot
 	implementation "org.springframework.boot:spring-boot-starter-data-jpa"
@@ -68,4 +69,7 @@ sonarqube {
 	properties {
 		property "sonar.projectKey", "nikolaischunk_TryOutTesting"
 	}
+}
+bootJar {
+	archiveFileName.set("app.jar")
 }
